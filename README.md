@@ -1,4 +1,4 @@
-```markdown
+
 # 🎬 Movie Genre Classification using XGBoost 🎯
 
 This project uses **TF-IDF vectorization** and **XGBoost** to classify movies into genres based on their descriptions. It efficiently handles **large datasets** and **imbalanced classes** while maintaining high accuracy.
