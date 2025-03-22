@@ -68,31 +68,24 @@ pip install xgboost scikit-learn pandas numpy
 | **Step**                | **Complexity**  | **Time (for 54K samples)** |
 |------------------------|--------------|------------------|
 | **TF-IDF Vectorization** | `O(N * M)`  | ~30-60 sec  |
-| **XGBoost Training**    | `O(N log N)` | ~1-3 min  |
+| **XGBoost Training**    | `O(N log N)` | ~3-5 min  |
 | **Prediction**          | `O(N log N)` | ~30-60 sec  |
-| **Total Time**          | -            | ~2-5 min  |
+| **Total Time**          | -            | ~5-10 min  |
 
 🔹 `N = Number of samples`, `M = Number of words per movie description`.
+
+**P.S. The time mentioned can differ based on the system.**
 
 ---
 
 ## 🎯 Usage
 ### **Run the Script**
 ```sh
-python movie_genre_classifier.py
-```
-
-### **Example Output**
-```
-Validation Accuracy: 0.78
-Precision: 0.75
-Recall: 0.78
-F1 Score: 0.76
-Predictions saved to predicted_test_data.csv
+python classifier.py
 ```
 
 ### **Output File:**
-- `predicted_test_data.csv` contains:
+- `predicted_test_data.csv` contains (example):
   ```
   ID,TITLE,DESCRIPTION,PREDICTED_GENRE
   123,Movie Name,This is a sci-fi adventure,Sci-Fi
